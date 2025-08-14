@@ -13,7 +13,7 @@ export default function HeroSection() {
 
     return (
         <section className="bg-[#121212]">
-            <div className="max-w-6xl mx-auto px-4 md:px-6 pt-24 md:pt-28 pb-10 md:pb-16">
+            <div className="max-w-6xl mx-auto px-4 md:px-6 pt-24 md:pt-28 pb-16 md:pb-16">
                 {/* 2 columnas en desktop, centrado vertical */}
                 <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-10 min-h-[70svh]">
                     {/* Texto (izquierda en desktop) */}
