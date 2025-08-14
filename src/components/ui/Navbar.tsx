@@ -42,7 +42,7 @@ export default function Navbar() {
             <div
                 className={[
                     'fixed top-0 inset-x-0 z-50 transition-all duration-300',
-                    scrolled ? 'backdrop-blur supports-[backdrop-filter]:bg-[#121212]/0' : 'bg-[#121212]',
+                    scrolled ? 'supports-[backdrop-filter]:bg-[]/0' : 'bg-[#121212]/80',
                 ].join(' ')}
                 aria-label="Site navigation"
             >

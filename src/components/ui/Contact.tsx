@@ -28,7 +28,7 @@ export default function ContactSection() {
                                         type="text"
                                         id="contact-name"
                                         placeholder="Name"
-                                        className="peer p-3 sm:p-4 block w-full bg-neutral-800 border-transparent rounded-lg sm:text-sm text-white placeholder:text-transparent 
+                                        className="peer p-3 sm:p-4 block w-full bg-[white] border-transparent rounded-lg sm:text-sm text-white placeholder:text-transparent 
                     focus:outline-hidden focus:ring-0 focus:border-transparent 
                     focus:pt-6 focus:pb-2 not-placeholder-shown:pt-6 not-placeholder-shown:pb-2"
                                     />
@@ -48,7 +48,7 @@ export default function ContactSection() {
                                         type="email"
                                         id="contact-email"
                                         placeholder="Email"
-                                        className="peer p-3 sm:p-4 block w-full bg-neutral-800 border-transparent rounded-lg sm:text-sm text-white placeholder:text-transparent 
+                                        className="peer p-3 sm:p-4 block w-full bg-[white] border-transparent rounded-lg sm:text-sm text-white placeholder:text-transparent 
                     focus:outline-hidden focus:ring-0 focus:border-transparent 
                     focus:pt-6 focus:pb-2 not-placeholder-shown:pt-6 not-placeholder-shown:pb-2"
                                     />
@@ -68,7 +68,7 @@ export default function ContactSection() {
                                         type="text"
                                         id="contact-company"
                                         placeholder="Company"
-                                        className="peer p-3 sm:p-4 block w-full bg-neutral-800 border-transparent rounded-lg sm:text-sm text-white placeholder:text-transparent 
+                                        className="peer p-3 sm:p-4 block w-full bg-[white] border-transparent rounded-lg sm:text-sm text-white placeholder:text-transparent 
                     focus:outline-hidden focus:ring-0 focus:border-transparent 
                     focus:pt-6 focus:pb-2 not-placeholder-shown:pt-6 not-placeholder-shown:pb-2"
                                     />
@@ -88,7 +88,7 @@ export default function ContactSection() {
                                         type="text"
                                         id="contact-phone"
                                         placeholder="Phone"
-                                        className="peer p-3 sm:p-4 block w-full bg-neutral-800 border-transparent rounded-lg sm:text-sm text-white placeholder:text-transparent 
+                                        className="peer p-3 sm:p-4 block w-full bg-[white] border-transparent rounded-lg sm:text-sm text-white placeholder:text-transparent 
                     focus:outline-hidden focus:ring-0 focus:border-transparent 
                     focus:pt-6 focus:pb-2 not-placeholder-shown:pt-6 not-placeholder-shown:pb-2"
                                     />
@@ -107,7 +107,7 @@ export default function ContactSection() {
                                     <textarea
                                         id="contact-message"
                                         placeholder="Tell us about your project"
-                                        className="peer p-3 sm:p-4 block w-full bg-neutral-800 border-transparent rounded-lg sm:text-sm text-white placeholder:text-transparent 
+                                        className="peer p-3 sm:p-4 block w-full bg-[white] border-transparent rounded-lg sm:text-sm text-white placeholder:text-transparent 
                     focus:outline-hidden focus:ring-0 focus:border-transparent 
                     focus:pt-6 focus:pb-2 not-placeholder-shown:pt-6 not-placeholder-shown:pb-2"
                                     />
@@ -127,7 +127,7 @@ export default function ContactSection() {
                                 <p className="mt-5">
                                     <button
                                         type="submit"
-                                        className="group inline-flex items-center gap-x-2 py-2 px-3 bg-[#2B3D8F] font-medium text-sm text-white rounded-full focus:outline-hidden"
+                                        className="group inline-flex items-center gap-x-2 py-2 px-3 bg-[#00733E] font-medium text-sm text-white rounded-full focus:outline-hidden"
                                     >
                                         Submit
                                         <svg
