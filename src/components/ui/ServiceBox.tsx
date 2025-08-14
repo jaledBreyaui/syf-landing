@@ -21,7 +21,7 @@ const ServiceBox: React.FC<ServiceBoxProps> = ({
             </div>
             <h3 className="text-white text-2xl font-semibold mb-6">{title}</h3>
             <p className="text-gray-300 text-sm mb-6">{description}</p>
-            <button className="bg-violet-600 hover:bg-violet-700 text-white font-medium px-4 py-2 rounded-md transition-colors duration-300">
+            <button className="bg-[#2B3D8F] hover:bg-violet-700 text-white font-medium px-4 py-2 rounded-md transition-colors duration-300">
                 {buttonText}
             </button>
         </div>

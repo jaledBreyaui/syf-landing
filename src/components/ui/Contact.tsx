@@ -127,7 +127,7 @@ export default function ContactSection() {
                                 <p className="mt-5">
                                     <button
                                         type="submit"
-                                        className="group inline-flex items-center gap-x-2 py-2 px-3 bg-[#7f22ff] font-medium text-sm text-white rounded-full focus:outline-hidden"
+                                        className="group inline-flex items-center gap-x-2 py-2 px-3 bg-[#2B3D8F] font-medium text-sm text-white rounded-full focus:outline-hidden"
                                     >
                                         Submit
                                         <svg

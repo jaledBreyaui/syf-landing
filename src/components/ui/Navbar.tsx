@@ -1,7 +1,11 @@
+// verde #00733E.
+//violeta #2B3D8F
+
 'use client';
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
@@ -50,13 +54,22 @@ export default function Navbar() {
                         'max-w-6xl mx-auto flex items-center justify-between',
                         'text-white transition-all duration-300',
                         scrolled
-                            ? 'mt-3 mb-3 rounded-full border border-violet-600/20 px-4 py-2 md:px-6 md:py-3 shadow-lg bg-[#121212]/80'
+                            ? 'mt-3 mb-3 rounded-full border border-[#00733E]/20 px-4 py-2 md:px-6 md:py-3 shadow-lg bg-[#121212]/80'
                             : 'px-4 py-4 md:px-6',
                     ].join(' ')}
                 >
                     {/* Logo a la izquierda, sin padding fantasma */}
                     <Link href="#" className="inline-flex items-center">
-                        <span className="font-extrabold tracking-tight">S&amp;F Global SAS</span>
+                        {/* <span className="font-extrabold tracking-tight">S&amp;F Global SAS</span>
+                         */}
+                        <Image
+                            src='/logov2.png'
+                            alt='logo'
+                            className='block h-8 w-auto md:h-9 lg:h-10 object-contain select-none'
+                            height={40}
+                            width={150}
+                            priority
+                        />
                     </Link>
 
                     {/* Links desktop */}
@@ -72,12 +85,12 @@ export default function Navbar() {
                         ))}
                         <button
                             onClick={toggleLang}
-                            className="relative rounded-full bg-[#7f22fe] px-4 py-2 font-semibold text-white hover:brightness-110 transition"
+                            className="relative rounded-full bg-[#2B3D8F] px-4 py-2 font-semibold text-white hover:brightness-110 transition"
                             aria-label="Toggle language ES/EN"
                         >
                             {lang.toUpperCase()}
                             {scrolled && (
-                                <span className="pointer-events-none absolute -inset-1 rounded-full ring-2 ring-[#7f22fe]/30" />
+                                <span className="pointer-events-none absolute -inset-1 rounded-full ring-2 ring-[#2B3D8F]/30" />
                             )}
                         </button>
                     </nav>
@@ -133,7 +146,7 @@ export default function Navbar() {
                             </Link>
                         ))}
                         <button
-                            className="mt-2 inline-flex items-center justify-center rounded-lg bg-[#7f22fe] px-4 py-3 font-semibold hover:brightness-110"
+                            className="mt-2 inline-flex items-center justify-center rounded-lg bg-[#2B3D8F] px-4 py-3 font-semibold hover:brightness-110"
                             onClick={() => {
                                 toggleLang();
                                 setOpen(false);

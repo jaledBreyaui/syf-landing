@@ -28,7 +28,7 @@ export default function HeroSection() {
                         </p>
 
                         <div className="mt-8">
-                            <button className="inline-flex items-center rounded-lg bg-violet-600 px-5 py-3 text-white font-semibold shadow-sm hover:brightness-110 transition">
+                            <button className="inline-flex items-center rounded-lg bg-[#2B3D8F] px-5 py-3 text-white font-semibold shadow-sm hover:brightness-110 transition">
                                 Contactanos
                             </button>
                         </div>

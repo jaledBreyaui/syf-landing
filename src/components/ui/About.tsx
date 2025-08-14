@@ -32,15 +32,15 @@ export default function About() {
                                 </div>
                                 <div className="w-full lg:justify-start justify-center items-center sm:gap-10 gap-5 inline-flex">
                                     <div className="flex-col justify-start items-start inline-flex">
-                                        <h3 className="text-white text-4xl font-bold font-manrope leading-normal">33+</h3>
+                                        <h3 className="text-[#00733E] text-4xl font-bold font-manrope leading-normal">33+</h3>
                                         <h6 className="text-gray-300 text-base font-normal leading-relaxed">Years of Experience</h6>
                                     </div>
                                     <div className="flex-col justify-start items-start inline-flex">
-                                        <h4 className="text-white text-4xl font-bold font-manrope leading-normal">125+</h4>
+                                        <h4 className="text-[#00733E] text-4xl font-bold font-manrope leading-normal">125+</h4>
                                         <h6 className="text-gray-300 text-base font-normal leading-relaxed">Successful Projects</h6>
                                     </div>
                                     <div className="flex-col justify-start items-start inline-flex">
-                                        <h4 className="text-white text-4xl font-bold font-manrope leading-normal">52+</h4>
+                                        <h4 className="text-[#00733E] text-4xl font-bold font-manrope leading-normal">52+</h4>
                                         <h6 className="text-gray-300 text-base font-normal leading-relaxed">Happy Clients</h6>
                                     </div>
                                 </div>
