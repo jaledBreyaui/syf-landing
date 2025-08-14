@@ -1,11 +1,10 @@
 import Capsule from "./Capsule";
-import SectionTitle from "./SectionTitle";
+// import SectionTitle from "./SectionTitle";
 import Image from "next/image";
 export default function About() {
     return (
-        <section className="px-4 py-10 sm:py-20 flex flex-col items-center">
+        <section className="px-4 py-10 sm:py-20 flex flex-col items-center bg-[#121212]">
             <Capsule text="Nosotros" />
-            {/* <SectionTitle title="Nosotros" /> */}
             <div className="pt-10 relative">
                 <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
                     <div className="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
