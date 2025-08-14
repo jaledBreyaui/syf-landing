@@ -3,16 +3,16 @@ import SectionTitle from "./SectionTitle";
 import Image from "next/image";
 export default function About() {
     return (
-        <section className="px-4 py-20 flex flex-col items-center">
+        <section className="px-4 py-10 sm:py-20 flex flex-col items-center">
             <Capsule text="Nosotros" />
             {/* <SectionTitle title="Nosotros" /> */}
-            <div className="py-20 relative">
+            <div className="pt-10 relative">
                 <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
                     <div className="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
                         <div
                             className="w-full justify-center items-start gap-6 grid sm:grid-cols-2 grid-cols-1 lg:order-first order-last">
-                            <div className="pt-24 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
-                                <Image className="rounded-xl object-cover" src="/5.jpg" alt="about Us image" height={600} width={450} />
+                            <div className="md:pt-24 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
+                                <Image className="rounded-xl object-cover hidden sm:block" src="/5.jpg" alt="about Us image" height={600} width={450} />
                             </div>
                             <Image className="sm:ml-0 ml-auto rounded-xl object-cover"
                                 src="/6.jpg"

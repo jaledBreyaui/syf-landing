@@ -1,8 +1,8 @@
-import Image from "next/image";
 import HeroSection from "@/components/ui/HeroSection";
 import Services from "@/components/ui/Services";
 import About from "@/components/ui/About"
 import Contact from '@/components/ui/Contact'
+import Footer from "@/components/ui/Footer";
 export default function Home() {
   return (
     <main>
@@ -10,6 +10,7 @@ export default function Home() {
       <Services />
       <About />
       <Contact />
+      <Footer />
     </main>
   );
 }

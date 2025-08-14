@@ -10,11 +10,13 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.21",
+    "i18next": "^25.3.6",
     "lottie-react": "^2.4.1",
     "next": "15.4.6",
     "preline": "^3.2.3",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "react-i18next": "^15.6.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

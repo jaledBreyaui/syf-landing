@@ -1,20 +1,21 @@
+'use client'
 import SectionTitle from './SectionTitle'
 import ServiceBox from './ServiceBox'
+import Image from 'next/image'
+import { useWidth } from '@/hooks/useWidth'
 
 export default function Services() {
-
-
-
+    const width = useWidth();
     return (
         <section id="services" className="relative bg-[#121212]">
-            <div className="relativeoverflow-hidden">
+            <div className="relative overflow-hidden sm:py-20 lg:py-0">
                 <div
                     className="absolute inset-0 bg-cover"
                     style={{
-                        backgroundImage: 'url(/hero.jpg)',
+                        backgroundImage: `url(/${width > 648 ? "hero.jpg" : "parallax.jpg"})`,
                         backgroundPosition: "50% 20%",
                         backgroundAttachment: "fixed",
-                        filter: 'blur(1px)'
+                        filter: 'blur(2px)'
                     }}
                 />
                 <div className="relative max-w-7xl mx-auto px-4 py-16 z-50  flex flex-col service-container">

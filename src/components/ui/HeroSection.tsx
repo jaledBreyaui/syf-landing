@@ -10,7 +10,7 @@ export default function HeroSection() {
     )
 
     return (
-        <section className="mx-auto max-w-7xl px-4 py-14 md:py-24 h-[80vh]">
+        <section className="mx-auto max-w-7xl px-4 py-4 md:py-24 h-[60vh] md:h-[80vh]">
             <div className="rounded-3xl bg-[#121212] overflow-hidden">
                 {/* ✅ Grid estable: 1 col mobile / 2 cols desktop */}
                 <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-0">
