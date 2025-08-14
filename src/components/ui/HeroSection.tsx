@@ -12,7 +12,7 @@ export default function HeroSection() {
     );
 
     return (
-        <section className="bg-[#121212]">
+        <section className="bg-[#2B3D8F]">
             <div className="max-w-6xl mx-auto px-4 md:px-6 pt-24 md:pt-28 pb-16 md:pb-16">
                 {/* 2 columnas en desktop, centrado vertical */}
                 <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-10 min-h-[70svh]">
@@ -28,7 +28,7 @@ export default function HeroSection() {
                         </p>
 
                         <div className="mt-8">
-                            <button className="inline-flex items-center rounded-lg bg-[#2B3D8F] px-5 py-3 text-white font-semibold shadow-sm hover:brightness-110 transition">
+                            <button className="inline-flex items-center rounded-lg bg-[#00733E] px-5 py-3 text-white font-semibold shadow-sm hover:brightness-110 transition">
                                 Contactanos
                             </button>
                         </div>

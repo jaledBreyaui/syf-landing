@@ -1,6 +1,3 @@
-// verde #00733E.
-//violeta #2B3D8F
-
 'use client';
 
 import Link from 'next/link';
@@ -45,7 +42,7 @@ export default function Navbar() {
             <div
                 className={[
                     'fixed top-0 inset-x-0 z-50 transition-all duration-300',
-                    scrolled ? 'backdrop-blur supports-[backdrop-filter]:bg-[#121212]/70' : 'bg-[#121212]',
+                    scrolled ? 'backdrop-blur supports-[backdrop-filter]:bg-[#121212]/0' : 'bg-[#121212]',
                 ].join(' ')}
                 aria-label="Site navigation"
             >
@@ -85,7 +82,7 @@ export default function Navbar() {
                         ))}
                         <button
                             onClick={toggleLang}
-                            className="relative rounded-full bg-[#2B3D8F] px-4 py-2 font-semibold text-white hover:brightness-110 transition"
+                            className="relative rounded-full bg-[#00733E] px-4 py-2 font-semibold text-white hover:brightness-110 transition"
                             aria-label="Toggle language ES/EN"
                         >
                             {lang.toUpperCase()}
@@ -146,7 +143,7 @@ export default function Navbar() {
                             </Link>
                         ))}
                         <button
-                            className="mt-2 inline-flex items-center justify-center rounded-lg bg-[#2B3D8F] px-4 py-3 font-semibold hover:brightness-110"
+                            className="mt-2 inline-flex items-center justify-center rounded-lg bg-[#00733E] px-4 py-3 font-semibold hover:brightness-110"
                             onClick={() => {
                                 toggleLang();
                                 setOpen(false);

@@ -3,7 +3,7 @@ import SectionTitle from "./SectionTitle";
 
 export default function ContactSection() {
     return (
-        <section id="contact" className="bg-[#121212]">
+        <section id="contact" className="bg-[#2B3D8F]">
 
             <div className="max-w-5xl px-4 xl:px-0 py-10 lg:py-20 mx-auto">
                 <div className="max-w mb-0 md:mb-20 lg:mb-14 flex items-center justify-between flex-col-reverse md:flex-row ">
