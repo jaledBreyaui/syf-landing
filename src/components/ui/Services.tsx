@@ -17,8 +17,8 @@ export default function Services() {
             />
 
             {/* Velo de color por encima del fondo pero debajo del contenido */}
-            <div className="pointer-events-none absolute inset-0 -z-0 bg-violet-700/10 mix-blend-multiply" />
-
+            <div className="pointer-events-none absolute inset-0 -z-0 bg-[violet-700]/10 mix-blend-multiply" />
+            {/* #2B3D8F */}
             {/* Contenido */}
             <div className="relative max-w-7xl mx-auto px-4 py-16 sm:py-20 lg:py-16 z-10">
                 <SectionTitle title="Servicios" addStyle="mb-20" />
