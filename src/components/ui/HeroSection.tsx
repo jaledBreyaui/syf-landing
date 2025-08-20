@@ -1,7 +1,7 @@
 'use client';
 import { useMemo } from 'react';
 import Lottie from 'lottie-react';
-import animationData from '@/assets/lottie/ship.json' assert { type: 'json' };
+import animationData from '@/assets/lottie/supplychain.json' assert { type: 'json' };
 
 export default function HeroSection() {
     const shouldReduce = useMemo(

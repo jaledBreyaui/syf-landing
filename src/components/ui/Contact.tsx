@@ -1,6 +1,7 @@
 import Capsule from "./Capsule";
+import ContactInput from "./ContactInput";
 import SectionTitle from "./SectionTitle";
-
+import ContactInfo from "./ContactInfo";
 export default function ContactSection() {
     return (
         <section id="contact" className="bg-[#2B3D8F]">
@@ -22,85 +23,11 @@ export default function ContactSection() {
                     <div className="md:order-2 border-b border-neutral-800 pb-10 mb-10 md:border-b-0 md:pb-0 md:mb-0">
                         <form>
                             <div className="space-y-4">
-                                {/* Name */}
-                                <div className="relative">
-                                    <input
-                                        type="text"
-                                        id="contact-name"
-                                        placeholder="Name"
-                                        className="peer p-3 sm:p-4 block w-full bg-[white] border-transparent rounded-lg sm:text-sm text-white placeholder:text-transparent 
-                    focus:outline-hidden focus:ring-0 focus:border-transparent 
-                    focus:pt-6 focus:pb-2 not-placeholder-shown:pt-6 not-placeholder-shown:pb-2"
-                                    />
-                                    <label
-                                        htmlFor="contact-name"
-                                        className="absolute top-0 start-0 p-3 sm:p-4 h-full text-gray-300 text-sm truncate pointer-events-none transition ease-in-out duration-100 
-                    peer-focus:text-xs peer-focus:-translate-y-1.5 peer-focus:text-gray-300 
-                    peer-not-placeholder-shown:text-xs peer-not-placeholder-shown:-translate-y-1.5 peer-not-placeholder-shown:text-gray-300"
-                                    >
-                                        Name
-                                    </label>
-                                </div>
 
-                                {/* Email */}
-                                <div className="relative">
-                                    <input
-                                        type="email"
-                                        id="contact-email"
-                                        placeholder="Email"
-                                        className="peer p-3 sm:p-4 block w-full bg-[white] border-transparent rounded-lg sm:text-sm text-white placeholder:text-transparent 
-                    focus:outline-hidden focus:ring-0 focus:border-transparent 
-                    focus:pt-6 focus:pb-2 not-placeholder-shown:pt-6 not-placeholder-shown:pb-2"
-                                    />
-                                    <label
-                                        htmlFor="contact-email"
-                                        className="absolute top-0 start-0 p-3 sm:p-4 h-full text-gray-300 text-sm truncate pointer-events-none transition ease-in-out duration-100 
-                    peer-focus:text-xs peer-focus:-translate-y-1.5 peer-focus:text-gray-300 
-                    peer-not-placeholder-shown:text-xs peer-not-placeholder-shown:-translate-y-1.5 peer-not-placeholder-shown:text-gray-300"
-                                    >
-                                        Email
-                                    </label>
-                                </div>
-
-                                {/* Company */}
-                                <div className="relative">
-                                    <input
-                                        type="text"
-                                        id="contact-company"
-                                        placeholder="Company"
-                                        className="peer p-3 sm:p-4 block w-full bg-[white] border-transparent rounded-lg sm:text-sm text-white placeholder:text-transparent 
-                    focus:outline-hidden focus:ring-0 focus:border-transparent 
-                    focus:pt-6 focus:pb-2 not-placeholder-shown:pt-6 not-placeholder-shown:pb-2"
-                                    />
-                                    <label
-                                        htmlFor="contact-company"
-                                        className="absolute top-0 start-0 p-3 sm:p-4 h-full text-gray-300 text-sm truncate pointer-events-none transition ease-in-out duration-100 
-                    peer-focus:text-xs peer-focus:-translate-y-1.5 peer-focus:text-gray-300 
-                    peer-not-placeholder-shown:text-xs peer-not-placeholder-shown:-translate-y-1.5 peer-not-placeholder-shown:text-gray-300"
-                                    >
-                                        Company
-                                    </label>
-                                </div>
-
-                                {/* Phone */}
-                                <div className="relative">
-                                    <input
-                                        type="text"
-                                        id="contact-phone"
-                                        placeholder="Phone"
-                                        className="peer p-3 sm:p-4 block w-full bg-[white] border-transparent rounded-lg sm:text-sm text-white placeholder:text-transparent 
-                    focus:outline-hidden focus:ring-0 focus:border-transparent 
-                    focus:pt-6 focus:pb-2 not-placeholder-shown:pt-6 not-placeholder-shown:pb-2"
-                                    />
-                                    <label
-                                        htmlFor="contact-phone"
-                                        className="absolute top-0 start-0 p-3 sm:p-4 h-full text-gray-300 text-sm truncate pointer-events-none transition ease-in-out duration-100 
-                    peer-focus:text-xs peer-focus:-translate-y-1.5 peer-focus:text-gray-300 
-                    peer-not-placeholder-shown:text-xs peer-not-placeholder-shown:-translate-y-1.5 peer-not-placeholder-shown:text-gray-300"
-                                    >
-                                        Phone
-                                    </label>
-                                </div>
+                                <ContactInput placeholder="Name" type="name" />
+                                <ContactInput placeholder="Email" type="email" />
+                                <ContactInput placeholder="Company" type="company" />
+                                <ContactInput placeholder="Phone" type="phone" />
 
                                 {/* Message */}
                                 <div className="relative">
@@ -153,65 +80,64 @@ export default function ContactSection() {
 
                     {/* Contact Info */}
                     <div className="space-y-14">
-                        {/* Address */}
-                        <div className="flex gap-x-5">
-                            <svg
-                                className="shrink-0 size-6 text-neutral-500"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="1.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            >
-                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-                                <circle cx="12" cy="10" r="3" />
-                            </svg>
-                            <div className="grow">
-                                <h4 className="text-white font-semibold">Our address:</h4>
-                                <address className="mt-1 text-neutral-400 text-sm not-italic">
-                                    300 Bath Street, Tay House<br />
-                                    Glasgow G2 4JR, United Kingdom
-                                </address>
-                            </div>
-                        </div>
 
-                        {/* Email */}
-                        <div className="flex gap-x-5">
-                            <svg
-                                className="shrink-0 size-6 text-neutral-500"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="1.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            >
-                                <path d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6Z" />
-                                <path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10" />
-                            </svg>
-                            <div className="grow">
-                                <h4 className="text-white font-semibold">Email us:</h4>
-                                <a
-                                    href="mailto:hello@example.so"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="mt-1 text-neutral-400 text-sm hover:text-neutral-200"
+                        <ContactInfo
+                            title="Our address:"
+                            icon={
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="1.5"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
                                 >
-                                    hello@example.so
-                                </a>
-                            </div>
-                        </div>
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            }
+                        >
+                            <address>
+                                300 Bath Street, Tay House <br />
+                                Glasgow G2 4JR, United Kingdom
+                            </address>
+                        </ContactInfo>
+
+                        <ContactInfo
+                            title="Email us:"
+                            icon={
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="1.5"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                >
+                                    <path d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6Z" />
+                                    <path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10" />
+                                </svg>
+                            }
+                        >
+                            <a
+                                href="mailto:hello@example.so"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:text-neutral-200"
+                            >
+                                hello@example.so
+                            </a>
+                        </ContactInfo>
                     </div>
-                    {/* End Contact Info */}
+
                 </div>
-                {/* End Grid */}
+
             </div>
         </section>
     );
