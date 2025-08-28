@@ -1,10 +1,12 @@
+"use client"
 import Capsule from "./Capsule";
-// import SectionTitle from "./SectionTitle";
+import { useTranslation } from "react-i18next";
 import Image from "next/image";
 export default function About() {
+    const { t } = useTranslation();
     return (
         <section id="nosotros" className="px-4 py-10 sm:py-20 flex flex-col items-center bg-[#2B3D8F]">
-            <Capsule text="Nosotros" />
+            <Capsule text={t('about.capsule')} />
             <div className="pt-10 relative">
                 <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
                     <div className="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
@@ -24,24 +26,22 @@ export default function About() {
                                 <div className="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
                                     <h2
                                         className="text-white text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
-                                        Empowering Each Other to Succeed</h2>
+                                        {t('about.title')}</h2>
                                     <p className="text-gray-300 text-base font-normal leading-relaxed lg:text-start text-center">
-                                        Every project weve undertaken has been a collaborative effort, where every person
-                                        involved has left their mark. Together, weve not only constructed buildings but also
-                                        built enduring connections that define our success story.</p>
+                                        {t('about.description')}</p>
                                 </div>
                                 <div className="w-full lg:justify-start justify-center items-center sm:gap-10 gap-5 inline-flex">
                                     <div className="flex-col justify-start items-start inline-flex">
                                         <h3 className="text-[#00733E] text-4xl font-bold font-manrope leading-normal">33+</h3>
-                                        <h6 className="text-gray-300 text-base font-normal leading-relaxed">Years of Experience</h6>
+                                        <h6 className="text-gray-300 text-base font-normal leading-relaxed">{t('about.milestone_one')}</h6>
                                     </div>
                                     <div className="flex-col justify-start items-start inline-flex">
                                         <h4 className="text-[#00733E] text-4xl font-bold font-manrope leading-normal">125+</h4>
-                                        <h6 className="text-gray-300 text-base font-normal leading-relaxed">Successful Projects</h6>
+                                        <h6 className="text-gray-300 text-base font-normal leading-relaxed">{t('about.milestone_two')}</h6>
                                     </div>
                                     <div className="flex-col justify-start items-start inline-flex">
                                         <h4 className="text-[#00733E] text-4xl font-bold font-manrope leading-normal">52+</h4>
-                                        <h6 className="text-gray-300 text-base font-normal leading-relaxed">Happy Clients</h6>
+                                        <h6 className="text-gray-300 text-base font-normal leading-relaxed">{t('about.milestone_three')}</h6>
                                     </div>
                                 </div>
                             </div>

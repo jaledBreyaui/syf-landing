@@ -1,9 +1,13 @@
 'use client';
 import { useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import Lottie from 'lottie-react';
-import animationData from '@/assets/lottie/supplychain.json' assert { type: 'json' };
+import animationData from '@/assets/lottie/world.json' assert { type: 'json' };
+import Link from 'next/link';
 
 export default function HeroSection() {
+    const { t } = useTranslation();
+
     const shouldReduce = useMemo(
         () =>
             typeof window !== 'undefined' &&
@@ -19,18 +23,18 @@ export default function HeroSection() {
                     {/* Texto (izquierda en desktop) */}
                     <div className="order-2 md:order-1">
                         <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight text-white leading-[1.15] md:leading-[1.07]">
-                            La Mejor Experiencia
-                            <br className="hidden sm:block" /> En Transporte.
+                            {t('hero.title')}
+                            <br className="hidden sm:block" /> {t('hero.title_jump')}
                         </h1>
 
                         <p className="mt-6 text-base sm:text-lg text-gray-300 max-w-xl">
-                            Optimizamos tus operaciones de comercio internacional y nacional
+                            {t('hero.subtitle')}
                         </p>
 
                         <div className="mt-8">
-                            <button className="inline-flex items-center rounded-lg bg-[#00733E] px-5 py-3 text-white font-semibold shadow-sm hover:brightness-110 transition">
-                                Contactanos
-                            </button>
+                            <Link className="inline-flex items-center rounded-lg bg-[#00733E] px-5 py-3 text-white font-semibold shadow-sm hover:brightness-110 transition" href={"#contact"}>
+                                {t('hero.cta')}
+                            </Link>
                         </div>
                     </div>
 

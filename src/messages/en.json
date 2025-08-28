@@ -1,0 +1,93 @@
+{
+    "navbar": {
+        "home": "Home",
+        "about": "About Us",
+        "services": "Services",
+        "contact": "Contact"
+    },
+    "hero": {
+        "title": "The Best Experience In",
+        "title_jump": "Transportation.",
+        "subtitle": "We optimize your international and domestic trade operations",
+        "cta": "Get in touch"
+    },
+    "about": {
+        "capsule": "About Us",
+        "title": "We move everything wherever you say",
+        "description": "Syf Global has been connecting Argentina with the world for over 30 years. We are freight forwarders and customs brokers specialized in maritime, air, and land transportation. We combine logistics expertise, customs knowledge, and an international network to ensure your cargo arrives on time, with optimal routes and competitive rates. We handle every shipment with the same attention to detail as if it were our own.",
+        "milestone_one": "Years of Experience",
+        "milestone_two": "Another Key Metric",
+        "milestone_three": "Clients who trust Bautista FERRARI!"
+    },
+    "services": {
+        "title": "Our Services",
+        "items": {
+            "service1": {
+                "title": "Maritime Transport",
+                "items": [
+                    "Full container loads (FCL)",
+                    "Regular consolidated cargo (LCL)",
+                    "Conventional and roll-on/roll-off cargo",
+                    "Transit and transshipment operations"
+                ]
+            },
+            "service2": {
+                "title": "Air Transport",
+                "items": [
+                    "General cargo",
+                    "Dangerous goods",
+                    "Perishables",
+                    "Combined Air/Maritime"
+                ]
+            },
+            "service3": {
+                "title": "Land Transport",
+                "items": [
+                    "Full truck loads (FTL)",
+                    "Regular consolidated cargo (LTL)",
+                    "Intermodal/multimodal transport",
+                    "Rail transport"
+                ]
+            },
+            "service4": {
+                "title": "Customs Brokerage",
+                "items": [
+                    "Import/export customs clearance",
+                    "Transit clearances",
+                    "Free zone clearances"
+                ]
+            },
+            "service5": {
+                "title": "Special Services",
+                "items": [
+                    "Industrial projects",
+                    "Heavy and oversized cargo",
+                    "Relocations"
+                ]
+            },
+            "service6": {
+                "title": "Additional Services",
+                "items": [
+                    "Cargo insurance",
+                    "Storage and distribution",
+                    "Packaging"
+                ]
+            }
+        }
+    },
+    "contact": {
+        "capsule": "Contact",
+        "title": "We are here to help you",
+        "subtitle": "Whatever your goal - we will get you there",
+        "address": "Our address",
+        "email": "Email us",
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "company": "Company",
+            "phone": "Phone",
+            "message": "tell us about your project",
+            "submit": "Submit"
+        }
+    }
+}

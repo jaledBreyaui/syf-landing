@@ -2,12 +2,22 @@
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import LangSwitcher from './LangSwitcher';
 import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
+
+
+const navItems = [
+    { key: 'home', href: '#home' },
+    { key: 'about', href: '#about' },
+    { key: 'services', href: '#services' },
+    { key: 'contact', href: '#contact' }
+] as const;
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
     const [open, setOpen] = useState(false);
-    const [lang, setLang] = useState<'es' | 'en'>('es');
+    const { t } = useTranslation();
 
     useEffect(() => {
         const onScroll = () => setScrolled(window.scrollY > 80);
@@ -22,20 +32,7 @@ export default function Navbar() {
         return () => window.removeEventListener('resize', onResize);
     }, []);
 
-    useEffect(() => {
-        const saved = (typeof window !== 'undefined' && (localStorage.getItem('lang') as 'es' | 'en' | null)) || null;
-        const initial = saved ?? ((navigator.language || '').toLowerCase().startsWith('es') ? 'es' : 'en');
-        setLang(initial);
-        if (typeof document !== 'undefined') document.documentElement.lang = initial;
-    }, []);
 
-    const toggleLang = () => {
-        const next = lang === 'es' ? 'en' : 'es';
-        setLang(next);
-        if (typeof window !== 'undefined') localStorage.setItem('lang', next);
-        if (typeof document !== 'undefined') document.documentElement.lang = next;
-        window.dispatchEvent(new CustomEvent('langchange', { detail: next }));
-    };
 
     return (
         <>
@@ -71,25 +68,17 @@ export default function Navbar() {
 
                     {/* Links desktop */}
                     <nav className="hidden md:flex items-center gap-6 text-sm">
-                        {['Home', 'Nosotros', 'Servicios', 'Contact'].map((item) => (
+                        {navItems.map(({ key, href }) => (
                             <Link
-                                key={item}
-                                href={`#${item.toLowerCase()}`}
+                                key={key}
+                                href={href}
                                 className="text-neutral-200 hover:text-white transition"
                             >
-                                {item}
+                                {t(`navbar.${key}`)}
                             </Link>
                         ))}
-                        <button
-                            onClick={toggleLang}
-                            className="relative rounded-full bg-[#00733E] px-4 py-2 font-semibold text-white hover:brightness-110 transition"
-                            aria-label="Toggle language ES/EN"
-                        >
-                            {lang.toUpperCase()}
-                            {scrolled && (
-                                <span className="pointer-events-none absolute -inset-1 rounded-full ring-2 ring-[#2B3D8F]/30" />
-                            )}
-                        </button>
+
+                        <LangSwitcher />
                     </nav>
 
                     {/* Hamburguesa mobile */}
@@ -132,26 +121,16 @@ export default function Navbar() {
                 <div className="h-3 bg-gradient-to-b from-black/60 to-transparent pointer-events-none" aria-hidden />
                 <div className="bg-[#121212] text-white px-6 pt-20 pb-6 border-b border-white/10">
                     <nav className="flex flex-col gap-4 text-base">
-                        {['Home', 'Nosotros', 'Servicios', 'Contact'].map((item) => (
+                        {navItems.map(({ key, href }) => (
                             <Link
-                                key={item}
-                                href={`#${item.toLowerCase()}`}
-                                className="py-1 text-neutral-200 hover:text-white"
-                                onClick={() => setOpen(false)}
+                                key={key}
+                                href={href}
+                                className="text-neutral-200 hover:text-white transition"
                             >
-                                {item}
+                                {t(`navbar.${key}`)}
                             </Link>
                         ))}
-                        <button
-                            className="mt-2 inline-flex items-center justify-center rounded-lg bg-[#00733E] px-4 py-3 font-semibold hover:brightness-110"
-                            onClick={() => {
-                                toggleLang();
-                                setOpen(false);
-                            }}
-                            aria-label="Toggle language ES/EN"
-                        >
-                            {lang.toUpperCase()}
-                        </button>
+                        <LangSwitcher />
                     </nav>
                 </div>
             </div>

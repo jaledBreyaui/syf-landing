@@ -1,0 +1,93 @@
+{
+    "navbar": {
+        "home": "Home",
+        "about": "Nosotros",
+        "services": "Servicios",
+        "contact": "Contacto"
+    },
+    "hero": {
+        "title": "La Mejor Experiencia",
+        "title_jump": "En Transporte.",
+        "subtitle": "Optimizamos tus operaciones de comercio internacional y nacional",
+        "cta": "Contactanos"
+    },
+    "about": {
+        "capsule": "Nosotros",
+        "title": "Te trasladamos todo a donde digas lokito",
+        "description": "Syf Global más de 30 años conectando Argentina con el mundo. Somos agentes de carga y despachantes de aduana especializados en transporte marítimo, aéreo y terrestre. Combinamos experiencia logística, conocimiento aduanero y una red internacional para que tu carga llegue a destino en tiempo y forma, con rutas óptimas y tarifas competitivas.Nos ocupamos de cada envío con la misma atención al detalle que si fuera propio.",
+        "milestone_one": "Años de Experiencia",
+        "milestone_two": "Aca va Otra Cosa",
+        "milestone_three": "Clientes que confian en BautistaFERRARI!"
+    },
+    "services": {
+        "title": "Servicios",
+        "items": {
+            "service1": {
+                "title": "Transporte Marítimo",
+                "items": [
+                    "Contenedores completos FCL",
+                    "Consolidados regulares LCL",
+                    "Carga convencional y rodada",
+                    "Operaciones de transito y transbordo"
+                ]
+            },
+            "service2": {
+                "title": "Transporte Aéreo",
+                "items": [
+                    "Cargas generales",
+                    "Mercancias peligrosas",
+                    "Perecederos",
+                    "Combinados Aéreo/Marítimo"
+                ]
+            },
+            "service3": {
+                "title": "Transporte Terrestre",
+                "items": [
+                    "Camiones completos FCL",
+                    "Consolidados regulares LTL",
+                    "Transporte inter/multimoda",
+                    "Transporte por ferrocarril"
+                ]
+            },
+            "service4": {
+                "title": "Despacho de Aduanas",
+                "items": [
+                    "Despachos de aduanas import/export",
+                    "Despachos en Tránsito",
+                    "Despachos en Zona Franca"
+                ]
+            },
+            "service5": {
+                "title": "Servicios Especiales",
+                "items": [
+                    "Proyectos industriales",
+                    "Cargas pesadas y sobredim.",
+                    "Mudanzas"
+                ]
+            },
+            "service6": {
+                "title": "Servicios Adicionales",
+                "items": [
+                    "Seguro de mercancías",
+                    "Almacenaje y Distribución",
+                    "Embalajes"
+                ]
+            }
+        }
+    },
+    "contact": {
+        "capsule": "Contacto",
+        "title": "Te ayudamos con tu proyecto",
+        "subtitle": "Te ayudamos con tu proyecto",
+        "address": "Nuestras oficinas",
+        "email": "Envíanos un mail",
+        "form": {
+            "name": "Nombre",
+            "email": "Email",
+            "company": "Compañia",
+            "phone": "Teléfono",
+            "message": "Tu consulta",
+            "submit": "Enviar"
+        }
+    }
+}

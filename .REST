@@ -1,0 +1,3 @@
+curl -X POST http://localhost:3000/api/contact \
+  -H "Content-Type: application/json" \
+  -d '{"name":"Jaled","email":"jaled@ejemplo.com","company":"SMX","phone":"+54 11 1234-5678","message":"Quiero pedir presupuesto"}'
