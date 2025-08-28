@@ -2,7 +2,7 @@
 import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import Lottie from 'lottie-react';
-import animationData from '@/assets/lottie/world.json' assert { type: 'json' };
+import animationData from '@/assets/lottie/supplychain.json' assert { type: 'json' };
 import Link from 'next/link';
 
 export default function HeroSection() {
