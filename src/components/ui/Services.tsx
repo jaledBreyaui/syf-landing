@@ -21,7 +21,7 @@ export default function Services() {
 
     const order = ["service1", "service2", "service3", "service4", "service5", "service6"];
     return (
-        <section id="servicios" className="relative ">
+        <section id="services" className="relative ">
             {/* Fondo fijo global: funciona en iOS */}
             <div
                 aria-hidden

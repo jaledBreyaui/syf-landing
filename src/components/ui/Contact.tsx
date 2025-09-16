@@ -5,6 +5,9 @@ import ContactInput from "./ContactInput";
 import SectionTitle from "./SectionTitle";
 import ContactInfo from "./ContactInfo";
 import { useTranslation } from "react-i18next";
+import { IoLocationOutline, IoShareSocialOutline } from "react-icons/io5";
+import { MdOutlineEmail } from "react-icons/md";
+import { BsInstagram, BsLinkedin } from "react-icons/bs";
 
 export default function ContactSection() {
     const { t } = useTranslation();
@@ -149,34 +152,35 @@ export default function ContactSection() {
                         <ContactInfo
                             title={t('contact.address')}
                             icon={
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-                                    <circle cx="12" cy="10" r="3" />
-                                </svg>
+                                <IoLocationOutline size={30} />
                             }
                         >
                             <address>
-                                300 Bath Street, Tay House <br />
-                                Glasgow G2 4JR, United Kingdom
+                                Azcuenaga 1930 11 OF C <br />
+                                Capital Federal, Argentina
                             </address>
                         </ContactInfo>
 
                         <ContactInfo
                             title={t('contact.email')}
                             icon={
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                                    <path d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6Z" />
-                                    <path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10" />
-                                </svg>
+                                <MdOutlineEmail size={28} />
                             }
                         >
                             <a href="mailto:hello@example.so" target="_blank" rel="noopener noreferrer" className="hover:text-neutral-200">
-                                hello@example.so
+                                info@syfglobal-sas.com
                             </a>
+                        </ContactInfo>
+                        <ContactInfo
+                            title={"Seguinos en nuestras redes"}
+                            icon={
+                                <IoShareSocialOutline size={30} />
+                            }
+                        >
+                            <div className="flex flex-row gap-5 ml-1 mt-2">
+                                <a href="https://www.linkedin.com/company/syf-global/?viewAsMember=true" target="blank"><BsLinkedin size={20} /></a>
+                                <a href="https://www.instagram.com/syfglobal_sas?igsh=dmx0enRpeG1obm1m" target="blank"><BsInstagram size={20} /></a>
+                            </div>
                         </ContactInfo>
                     </div>
                 </div>

@@ -6,18 +6,18 @@
         "contact": "Contacto"
     },
     "hero": {
-        "title": "La Mejor Experiencia",
-        "title_jump": "En Transporte.",
-        "subtitle": "Optimizamos tus operaciones de comercio internacional y nacional",
+        "title": "Conectando Argentina Con El Mundo Desde",
+        "title_jump": "Hace Más De 30 Años",
+        "subtitle": "Brindamos soluciones integrales en comercio exterior, optimizando cada operación con eficiencia y confianza.",
         "cta": "Contactanos"
     },
     "about": {
-        "capsule": "Nosotros",
-        "title": "Te trasladamos todo a donde digas lokito",
+        "capsule": "Sobre Nosotros",
+        "title": "Tu envío, nuestra responsabilidad",
         "description": "Syf Global más de 30 años conectando Argentina con el mundo. Somos agentes de carga y despachantes de aduana especializados en transporte marítimo, aéreo y terrestre. Combinamos experiencia logística, conocimiento aduanero y una red internacional para que tu carga llegue a destino en tiempo y forma, con rutas óptimas y tarifas competitivas.Nos ocupamos de cada envío con la misma atención al detalle que si fuera propio.",
         "milestone_one": "Años de Experiencia",
         "milestone_two": "Operaciones",
-        "milestone_three": "Clientes que confian en SYF"
+        "milestone_three": "Clientes que confian en S&F"
     },
     "services": {
         "title": "Servicios",
@@ -77,8 +77,8 @@
     },
     "contact": {
         "capsule": "Contacto",
-        "title": "Te ayudamos con tu proyecto",
-        "subtitle": "Te ayudamos con tu proyecto",
+        "title": "Contactate con nosotros",
+        "subtitle": "Te ayudamos a diseñar la mejor ruta",
         "address": "Nuestras oficinas",
         "email": "Envíanos un mail",
         "form": {

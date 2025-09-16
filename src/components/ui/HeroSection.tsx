@@ -22,11 +22,10 @@ export default function HeroSection() {
                 <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-10 min-h-[70svh]">
                     {/* Texto (izquierda en desktop) */}
                     <div className="order-2 md:order-1">
-                        <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight text-white leading-[1.15] md:leading-[1.07]">
+                        <h1 className="text-4xl sm:text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.15] md:leading-[1.07]">
                             {t('hero.title')}
                             <br className="hidden sm:block" /> {t('hero.title_jump')}
                         </h1>
-
                         <p className="mt-6 text-base sm:text-lg text-gray-300 max-w-xl">
                             {t('hero.subtitle')}
                         </p>
